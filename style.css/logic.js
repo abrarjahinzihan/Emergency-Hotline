@@ -8,12 +8,26 @@ const clearHistoryBtn = document.querySelector(".hitory-part button");
 const coin = document.getElementById("diamond-count");
 let coins = 100; 
 
-copyButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        let count = parseInt(coCount.textContent);
-        coCount.textContent = count + 1;
+let copyCount = 0;
+
+copyButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const card = button.closest(".flex-col");
+        const serviceNumber = card.querySelector("p.mt-2").textContent;
+
+        navigator.clipboard.writeText(serviceNumber)
+            .then(() => {
+                alert(`Copied hotline number: ${serviceNumber}`);
+
+                copyCount++;
+                coCount.textContent = copyCount;
+            })
+            .catch(err => {
+                console.error("Copy failed: ", err);
+            });
     });
 });
+
 
 heartIcons.forEach(icon => {
     icon.addEventListener("click", () => {
@@ -68,6 +82,11 @@ callButtons.forEach(button => {
 clearHistoryBtn.addEventListener("click", () => {
     historyContainer.innerHTML = "";
 });
+
+
+
+
+
 
 
 
