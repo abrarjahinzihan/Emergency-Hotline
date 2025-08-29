@@ -18,18 +18,18 @@
         <div class="flex items-center space-x-6 right-div">
             <div class="flex items-center space-x-6">
             <div class=" bg-[#41FF6B] p-4 px-3 py-1 rounded-full w-[123px] h-[52px] flex items-center justify-center">
-                <span class="font-semibold text-yellow-800">100</span> 
+                <span id="heart-count" class="font-semibold text-yellow-800">0</span> 
                 <img class="w-[30px] h-[30px] ml-2" src="assets/heart.png" alt="">
                     
             </div>
                 
 
             <div class=" bg-[#41FF6B] p-4 px-3 py-1 rounded-full w-[123px] h-[52px] flex items-center justify-center">
-                <span class="font-semibold text-blue-800">5</span>
+                <span class="font-semibold text-blue-800">100</span>
                 <img class="w-[30px] h-[30px] ml-2" src="assets/coin.png" alt="">
             </div>
             <div class=" bg-[#00A63E] p-4 px-3 py-1 rounded-full w-[123px] h-[52px] flex items-center justify-center">
-                <p><span class="font-semibold text-blue-800">0</span> copies</p>
+                <p><span id="copy-count" class="font-semibold text-blue-800 ">0</span> copies</p>
             </div>
         </div>
     </nav>
@@ -56,7 +56,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/emergency.png" alt="icon" class="w-10 h-10 bg-[#FFE3E2] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -66,7 +66,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">সার্বজনীন</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
@@ -83,7 +83,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/police.png" alt="icon" class="w-10 h-10 bg-[#DFEFFF] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -93,7 +93,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">পুলিশ</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
@@ -110,7 +110,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/fire-service.png" alt="icon" class="w-10 h-10 bg-[#FFE3E2] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -120,7 +120,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">ফায়ার</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
@@ -134,7 +134,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/ambulance.png" alt="icon" class="w-10 h-10 bg-[#FFE3E2] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -144,7 +144,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">স্বাস্থ্য</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
@@ -161,7 +161,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/emergency.png" alt="icon" class="w-10 h-10 bg-[#FFE3E2] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -171,7 +171,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">সহায়তা</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
@@ -186,7 +186,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/emergency.png" alt="icon" class="w-10 h-10 bg-[#FFE3E2] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -196,7 +196,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">সরকারি</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
@@ -210,7 +210,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/emergency.png" alt="icon" class="w-10 h-10 bg-[#FFE3E2] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -220,7 +220,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">বিদ্যুৎ</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
@@ -234,7 +234,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/brac.png" alt="icon" class="w-10 h-10 bg-[#DFEFFF] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -244,7 +244,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">এনজিও</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
@@ -258,7 +258,7 @@
                 <div class="flex items-start justify-between">
                     <img src="assets/Bangladesh-Railway.png" alt="icon" class="w-10 h-10 bg-[#FFE3E2] p-2 rounded-lg">
                     <button>
-                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500"></i>
+                    <i class="text-gray-400 cursor-pointer fa-solid fa-heart hover:text-red-500 heart-img"></i>
                     </button>
                 </div>
                 <div class="mt-2">
@@ -268,7 +268,7 @@
                     <span class="inline-block px-3 py-1 mt-2 text-sm text-gray-600 bg-gray-100 rounded-full">পরিবহন</span>
                 </div>
                 <div class="flex items-center justify-between gap-2 mt-4">
-                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100">
+                    <button class="flex items-center justify-center flex-1 gap-1 py-2 text-gray-700 border rounded-lg hover:bg-gray-100 copy-btn">
                         <i class="text-gray-500 fa-solid fa-copy"></i> Copy
                     </button>
                     <button class="flex items-center justify-center flex-1 gap-1 py-2 text-white bg-green-500 rounded-lg hover:bg-green-600">
